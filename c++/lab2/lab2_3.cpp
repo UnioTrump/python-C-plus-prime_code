@@ -25,27 +25,27 @@ double ZhengArea(double a)
 int main()
 {
 	int i;
-	cout << "ÇëÊäÈëÒª¼ÆËãµÄÃæ»ýÀàÐÍ£º1-Ô²£¬2-³¤·½ÐÎ£¬3-Õý·½ÐÎ£º";
+	cout << "è¯·è¾“å…¥è¦è®¡ç®—çš„é¢ç§¯ç±»åž‹ï¼š1-åœ†ï¼Œ2-é•¿æ–¹å½¢ï¼Œ3-æ­£æ–¹å½¢ï¼š";
 	cin >> i;
 	switch (i)
 	{
 	case 1: {
 		double radius;
-		cout << "ÇëÊäÈëÔ²µÄ°ë¾¶£º";
+		cout << "è¯·è¾“å…¥åœ†çš„åŠå¾„ï¼š";
 		cin >> radius;
 		double Area = Circle(radius);
 		cout << Area << endl; break;
 	}
 	case 2: {
 		double l, s;
-		cout << "ÇëÒÀ´ÎÊäÈë³¤·½ÐÎµÄ³¤ºÍ¿í£º" << endl;
+		cout << "è¯·ä¾æ¬¡è¾“å…¥é•¿æ–¹å½¢çš„é•¿å’Œå®½ï¼š" << endl;
 		cin >> l >> s;
 		double Area = ChangArea(l, s);
 		cout << Area << endl; break;
 	}
 	case 3: {
 		double a;
-		cout << "ÇëÊäÈëÕý·½ÐÎµÄ±ß³¤£º";
+		cout << "è¯·è¾“å…¥æ­£æ–¹å½¢çš„è¾¹é•¿ï¼š";
 		cin >> a;
 		double Area = ZhengArea(a);
 		cout << Area << endl; break;
