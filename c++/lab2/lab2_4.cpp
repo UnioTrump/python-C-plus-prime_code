@@ -12,19 +12,19 @@ int main()
 		{
 		case 'A':
 		{
-			cout << "Êı¾İÒÑÔö¼Ó" << endl;
+			cout << "æ•°æ®å·²å¢åŠ " << endl;
 			cout << "Menu : A(dd) D(elete) S(ort) Q(uit) , Select one:";
 			cin >> Key; break;
 		}
 		case 'D':
 		{
-			cout << "Êı¾İÒÑÉ¾³ı" << endl;
+			cout << "æ•°æ®å·²åˆ é™¤" << endl;
 			cout << "Menu : A(dd) D(elete) S(ort) Q(uit) , Select one:";
 			cin >> Key; break;
 		}
 		case 'S':
 		{
-			cout << "Êı¾İÒÑÅÅĞò" << endl;
+			cout << "æ•°æ®å·²æ’åº" << endl;
 			cout << "Menu : A(dd) D(elete) S(ort) Q(uit) , Select one:";
 			cin >> Key; break;
 		}
@@ -32,7 +32,7 @@ int main()
 			break;
 		}
 	}
-	cout << "³ÌĞò½áÊø£¡" << endl;
+	cout << "ç¨‹åºç»“æŸï¼" << endl;
 
 	cin.get();
 }
