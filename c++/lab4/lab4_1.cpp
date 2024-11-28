@@ -13,12 +13,12 @@ public:
 		rank = r;
 		frequency = f;
 		voltage = v;
-		cout << "构造了一个CPU函数" << endl;
+		cout << "鏋勯�犱簡涓�涓狢PU鍑芥暟" << endl;
 	}
 	void run() { cout << "Start running!" << endl; }
 	void stop() { cout << "Stop running!" << endl; }
 	
-	~CPU() { cout << "析构了一个CPU!" << endl; }
+	~CPU() { cout << "鏋愭瀯浜嗕竴涓狢PU!" << endl; }
 
 	CPU_Rank GetRank() { return rank; }
 	int GetFerquency() { return frequency; }
