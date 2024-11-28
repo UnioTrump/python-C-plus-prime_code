@@ -13,11 +13,11 @@ struct Time {
 int main()
 {
 	int year_in, month_in, day_in, hour_in, minute_in, second_in;
-	cout << "ÒÀ´ÎÊäÈëÄê¡¢ÔÂ¡¢ÈÕ¡¢Ê±¡¢·Ö¡¢Ãë" << endl;
+	cout << "ä¾æ¬¡è¾“å…¥å¹´ã€æœˆã€æ—¥ã€æ—¶ã€åˆ†ã€ç§’" << endl;
 	cin >> year_in >> month_in >> day_in >> hour_in >> minute_in >> second_in;
 	struct Time clock = { year_in, month_in, day_in , hour_in , minute_in , second_in };
 	
-	cout << clock.year << "Äê" << clock.month << "ÔÂ" << clock.day << "ÈÕ" << clock.hour << ":"
+	cout << clock.year << "å¹´" << clock.month << "æœˆ" << clock.day << "æ—¥" << clock.hour << ":"
 		<< clock.minute << ";" << clock.second << endl;
 	cin.get();
 }
