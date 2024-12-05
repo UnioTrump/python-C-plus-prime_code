@@ -1,4 +1,4 @@
-//lab3_1 ÉãÊÏ¶È»ªÊÏ¶È×ª»»
+//lab3_1 æ‘„æ°åº¦åæ°åº¦è½¬æ¢
 #include <iostream>
 using namespace std;
 double F_H(double f);
@@ -6,7 +6,7 @@ double F_H(double f);
 int main()
 {
 	double c , f;
-	cout << "ÇëÊäÈëÒª×ª»»µÄ»ªÊÏÎÂ¶È:";
+	cout << "è¯·è¾“å…¥è¦è½¬æ¢çš„åæ°æ¸©åº¦:";
 	cin >> f;
 	c = F_H(f);
 	cout << c << endl;
