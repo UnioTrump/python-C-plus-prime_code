@@ -5,7 +5,7 @@ using namespace std;
 int main()
 {
 	double x, y;
-	cout << "ÇëÊäÈëÁ½¸öÊý×Ö" << endl;
+	cout << "Ã‡Ã«ÃŠÃ¤ÃˆÃ«ÃÂ½Â¸Ã¶ÃŠÃ½Ã—Ã–" << endl;
 	cin >> x >> y;
 	double result = pow(x, y);
 	cout << "pow(x , y) = " << result << endl;
