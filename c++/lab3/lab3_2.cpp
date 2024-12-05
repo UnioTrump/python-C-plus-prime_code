@@ -21,9 +21,9 @@ int main()
 {
 	int a, b, c;
 	double m, n, q;
-	cout << "请输入三个整数：" << endl;;
+	cout << "璇疯緭鍏ヤ笁涓暣鏁帮細" << endl;;
 	cin >> a >> b >> c;
-	cout << "请输入三个浮点数:" << endl;;
+	cout << "璇疯緭鍏ヤ笁涓诞鐐规暟:" << endl;;
 	cin >> m >> n >> q;
 	int m1 = Max1(a, b);
 	int m2 = Max1(a, b, c);
@@ -31,10 +31,10 @@ int main()
 	double m4 = Max1(m, n, q);
 	
 
-	cout << "a与b之间较大的是" << m1 << endl;
-	cout << "a,b,c之间较大的是" << m2 << endl;
-	cout << "m,n之间较大的是" << m3 << endl;
-	cout << "m,n,q之间较大的是" << m4 << endl;
+	cout << "a涓巄涔嬮棿杈冨ぇ鐨勬槸" << m1 << endl;
+	cout << "a,b,c涔嬮棿杈冨ぇ鐨勬槸" << m2 << endl;
+	cout << "m,n涔嬮棿杈冨ぇ鐨勬槸" << m3 << endl;
+	cout << "m,n,q涔嬮棿杈冨ぇ鐨勬槸" << m4 << endl;
 	
 	cin.get();
 }
