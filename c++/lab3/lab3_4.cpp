@@ -13,7 +13,7 @@ int fib(int n) {
 int main()
 {
 	int n;
-	cout << "ÇëÊäÈëÒª¼ÆËãµ½µÄÎ»Êı:";
+	cout << "Ã‡Ã«ÃŠÃ¤ÃˆÃ«Ã’ÂªÂ¼Ã†Ã‹Ã£ÂµÂ½ÂµÃ„ÃÂ»ÃŠÃ½:";
 	cin >> n;
 	int result = fib(n);
 	cout << "fib(" << n << ") = " << result << endl;
