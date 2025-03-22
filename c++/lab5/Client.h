@@ -6,8 +6,8 @@ using namespace std;
 
 class Client {
 private:
-	static char ServerName;		//·şÎñÆ÷Ãû³Æ
-	static int ClientNum;		//Ò»¶¨ÒåµÄ¿Í»§ÊıÁ¿
+	static char ServerName;		//æœåŠ¡å™¨åç§°
+	static int ClientNum;		//ä¸€å®šä¹‰çš„å®¢æˆ·æ•°é‡
 	char ClientName;
 public:
 	Client(char name);
