@@ -2,7 +2,7 @@
 #include "D:\000-code-collection\C++_code\NewProject\NewProject\Headfile\Multiply.h"
 using namespace std;
 
-//	void MultiplyAndLog(int a, int b);		//ÉùÃ÷
+//	void MultiplyAndLog(int a, int b);		//Ã‰Ã¹ÃƒÃ·
 
 int main()
 {
