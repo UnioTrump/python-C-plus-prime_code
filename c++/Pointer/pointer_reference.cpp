@@ -12,7 +12,7 @@ int main()
 	int a = 8;
 	
 
-	int& ref = a;		//对a的引用
+	int& ref = a;		//露脭a碌脛脪媒脫脙
 
 	Interger(a);
 
