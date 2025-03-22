@@ -3,10 +3,10 @@ using namespace std;
 
 double zx(double x)
 {
-	double k = 0;	//³õÊ¼Ïî
+	double k = 0;	//åˆå§‹é¡¹
 	for (int i = 1;; i++)
 	{		
-		//ÏÈĞ´Ì©ÀÕÕ¹¿ªµ¥Ïî
+		//å…ˆå†™æ³°å‹’å±•å¼€å•é¡¹
 		int a = 1;
 		long double b = 1;
 		for (int n = 2 * i - 1; n > 0; n--)
@@ -22,10 +22,10 @@ double zx(double x)
 			c = c * (-1);
 		}
 		
-		//¶Ôµ¥ÏîÏŞÖÆ
+		//å¯¹å•é¡¹é™åˆ¶
 		k = k + b / a * c;
 		cout << b / a * c << endl;
-		if (abs(b / a * c) < 1e-7)	//´óÓÚãĞÖµ½áÊøÑ­»·
+		if (abs(b / a * c) < 1e-7)	//å¤§äºé˜ˆå€¼ç»“æŸå¾ªç¯
 		{
 			break;
 		}
@@ -38,12 +38,12 @@ int main()
 {
 	double y;
 	double x;
-	cout << "ÇëÊäÈëÄãÒª¼ÆËãµÄy:";
+	cout << "è¯·è¾“å…¥ä½ è¦è®¡ç®—çš„y:";
 	cin >> y;
 	x = y * 3.14159265 / 180;
-	cout << "yµÄÕıÏÒÖµÎª£º";
+	cout << "yçš„æ­£å¼¦å€¼ä¸ºï¼š";
 	cout << zx(x) << endl;
-	//cout << sin(x) << endl;¿ÉÖ±½ÓÇó³ö
+	//cout << sin(x) << endl;å¯ç›´æ¥æ±‚å‡º
 
 	cin.get();
 }
