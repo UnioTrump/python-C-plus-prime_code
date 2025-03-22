@@ -28,7 +28,7 @@ int main()
 	do
 	{
 		Log("Hello world!");
-	} while (condition);//先执行循环体语句，后判断条件
+	} while (condition);//鍏堟墽琛屽惊鐜綋璇彞锛屽悗鍒ゆ柇鏉′欢
 
 	*/
 
