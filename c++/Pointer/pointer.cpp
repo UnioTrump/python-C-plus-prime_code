@@ -11,9 +11,9 @@ int main()
 {
 	int num = 8;
 	
-	int* ptr = &num;		//num的地址
+	int* ptr = &num;		//num碌脛碌脴脰路
 	Interge(ptr);
-			//*ptr = 10;		//逆向指针
+			//*ptr = 10;		//脛忙脧貌脰赂脮毛
 	LOG(num);
 	std::cin.get();
 }
