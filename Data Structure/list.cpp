@@ -4,21 +4,21 @@ using namespace std;
 struct node {
 	int data;
 	node* succ;
-	//²Ù×÷
+	//æ“ä½œ
 	node* insertAsHead();
 	node* insertAsTail();
 	node* Locate(node* head, int x);
 };
 void insert(node* p, int x, int y);
-void deletel(node* head, int x);	//ÔÚheadÎªÍ·Ö¸ÕëµÄµ¥Á´±íÖĞ£¬É¾³ıÖµÎªxµÄ½áµã
-void change(node* head, int x, int y);	//ÔÚheadÎªÍ·Ö¸ÕëµÄµ¥Á´±íÖĞ£¬½«ÖµÎªxµÄ½áµã¸ÄÎªy
-void print(node* head);		//Êä³öheadÎªÍ·Ö¸ÕëµÄµ¥Á´±í
+void deletel(node* head, int x);	//åœ¨headä¸ºå¤´æŒ‡é’ˆçš„å•é“¾è¡¨ä¸­ï¼Œåˆ é™¤å€¼ä¸ºxçš„ç»“ç‚¹
+void change(node* head, int x, int y);	//åœ¨headä¸ºå¤´æŒ‡é’ˆçš„å•é“¾è¡¨ä¸­ï¼Œå°†å€¼ä¸ºxçš„ç»“ç‚¹æ”¹ä¸ºy
+void print(node* head);		//è¾“å‡ºheadä¸ºå¤´æŒ‡é’ˆçš„å•é“¾è¡¨
 
 //insertAsHead
 node* insertAsHead() {
 	node* s, * p;
 	int i;
-	cout << "ÇëÊäÈë×Ö·û£¬ÒÔ0½áÊø:"; cin >> i;
+	cout << "è¯·è¾“å…¥å­—ç¬¦ï¼Œä»¥0ç»“æŸ:"; cin >> i;
 	p = new node;
 	p->succ = NULL;
 	while (i) {
@@ -35,7 +35,7 @@ node* insertAsHead() {
 node* insertAsTail() {
 	node* s, * p, *tail;
 	int i;
-	cout << "ÇëÊäÈë×Ö·û:"; cin >> i;
+	cout << "è¯·è¾“å…¥å­—ç¬¦:"; cin >> i;
 	p = new node;
 	p->succ = NULL;
 	tail = p;
@@ -88,7 +88,7 @@ void deletel(node* head, int x) {
 		q = p;
 		p = p->succ;
 	}
-	if (p == NULL)cout << "É¾³ı½Úµã";
+	if (p == NULL)cout << "åˆ é™¤èŠ‚ç‚¹";
 	else {
 		q->succ = p->succ;
 		delete(p);
@@ -125,7 +125,7 @@ struct node {
     T data;
     node<T>* succ;
 
-    // ²Ù×÷
+    // æ“ä½œ
     static node<T>* insertAsHead();
     static node<T>* insertAsTail();
     static node<T>* Locate(node<T>* head, T x);
@@ -133,27 +133,27 @@ struct node {
 };
 
 template<typename T>
-void insert(node<T>* p, T x, T y);  //ÔÚpÎªÍ·µÄÁĞ±íÖĞÖµÎªxµÄ½Úµãºó²åÈëÖµÎªyµÄ½Úµã
+void insert(node<T>* p, T x, T y);  //åœ¨pä¸ºå¤´çš„åˆ—è¡¨ä¸­å€¼ä¸ºxçš„èŠ‚ç‚¹åæ’å…¥å€¼ä¸ºyçš„èŠ‚ç‚¹
 
 template<typename T>
-void deletel(node<T>* head, T x);    // ÔÚheadÎªÍ·Ö¸ÕëµÄµ¥Á´±íÖĞ£¬É¾³ıÖµÎªxµÄ½áµã
+void deletel(node<T>* head, T x);    // åœ¨headä¸ºå¤´æŒ‡é’ˆçš„å•é“¾è¡¨ä¸­ï¼Œåˆ é™¤å€¼ä¸ºxçš„ç»“ç‚¹
 
 template<typename T>
-void change(node<T>* head, T x, T y);    // ÔÚheadÎªÍ·Ö¸ÕëµÄµ¥Á´±íÖĞ£¬½«ÖµÎªxµÄ½áµã¸ÄÎªy
+void change(node<T>* head, T x, T y);    // åœ¨headä¸ºå¤´æŒ‡é’ˆçš„å•é“¾è¡¨ä¸­ï¼Œå°†å€¼ä¸ºxçš„ç»“ç‚¹æ”¹ä¸ºy
 
 template<typename T>
-void print(node<T>* head);     // Êä³öheadÎªÍ·Ö¸ÕëµÄµ¥Á´±í
+void print(node<T>* head);     // è¾“å‡ºheadä¸ºå¤´æŒ‡é’ˆçš„å•é“¾è¡¨
 
 // insertAsHead
 template<typename T>
 node<T>* node<T>::insertAsHead() {
     node<T>* s, * p;
     T i;
-    cout << "ÇëÊäÈëÊı¾İ£¬ÒÔ0½áÊø: ";
+    cout << "è¯·è¾“å…¥æ•°æ®ï¼Œä»¥0ç»“æŸ: ";
     cin >> i;
     p = new node<T>;
     p->succ = NULL;
-    while (i != T(0)) {  // Ê¹ÓÃT(0)À´ÊÊÅä²»Í¬ÀàĞÍµÄ"0"
+    while (i != T(0)) {  // ä½¿ç”¨T(0)æ¥é€‚é…ä¸åŒç±»å‹çš„"0"
         s = new node<T>;
         s->data = i;
         s->succ = p->succ;
@@ -168,12 +168,12 @@ template<typename T>
 node<T>* node<T>::insertAsTail() {
     node<T>* s, * p, * tail;
     T i;
-    cout << "ÇëÊäÈëÊı¾İ£¬ÒÔ0½áÊø: ";
+    cout << "è¯·è¾“å…¥æ•°æ®ï¼Œä»¥0ç»“æŸ: ";
     cin >> i;
     p = new node<T>;
     p->succ = NULL;
     tail = p;
-    while (i != T(0)) {  // Ê¹ÓÃT(0)À´ÊÊÅä²»Í¬ÀàĞÍµÄ"0"
+    while (i != T(0)) {  // ä½¿ç”¨T(0)æ¥é€‚é…ä¸åŒç±»å‹çš„"0"
         s = new node<T>;
         s->data = i;
         tail->succ = s;
@@ -225,7 +225,7 @@ void insert(node<T>* head, T x, T y) {
     node<T>* p, * s;
     p = node<T>::Locate(head, x);
     if (p == NULL) {
-        cout << "Î´ÕÒµ½ÖµÎª " << x << " µÄ½Úµã" << endl;
+        cout << "æœªæ‰¾åˆ°å€¼ä¸º " << x << " çš„èŠ‚ç‚¹" << endl;
         return;
     }
     s = new node<T>;
@@ -243,7 +243,7 @@ void deletel(node<T>* head, T x) {
         q = p;
         p = p->succ;
     }
-    if (p == NULL) cout << "Î´ÕÒµ½ÒªÉ¾³ıµÄ½Úµã" << endl;
+    if (p == NULL) cout << "æœªæ‰¾åˆ°è¦åˆ é™¤çš„èŠ‚ç‚¹" << endl;
     else {
         q->succ = p->succ;
         delete(p);
@@ -255,7 +255,7 @@ void print(node<T>* head) {
     node<T>* p;
     p = head->succ;
     if (p == NULL) {
-        cout << "Á´±íÎª¿Õ" << endl;
+        cout << "é“¾è¡¨ä¸ºç©º" << endl;
         return;
     }
     while (p->succ != NULL) {
@@ -266,8 +266,8 @@ void print(node<T>* head) {
 }
 
 int main() {
-    // ²âÊÔintÀàĞÍ
-    cout << "=== ²âÊÔintÀàĞÍ ===" << endl;
+    // æµ‹è¯•intç±»å‹
+    cout << "=== æµ‹è¯•intç±»å‹ ===" << endl;
     node<int>* p_int;
     p_int = node<int>::insertAsHead();
 	cout << "Insert As Head completed." << endl;
@@ -283,9 +283,9 @@ int main() {
     print(p_int);
 	cout << "Size of list: " << node<int>::_size(p_int) << endl;
 
-    // ²âÊÔdoubleÀàĞÍ
+    // æµ‹è¯•doubleç±»å‹
     /*
-    cout << "\n=== ²âÊÔdoubleÀàĞÍ ===" << endl;
+    cout << "\n=== æµ‹è¯•doubleç±»å‹ ===" << endl;
     node<double>* p_double;
     p_double = node<double>::insertAsTail();
     print(p_double);
