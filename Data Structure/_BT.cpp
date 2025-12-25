@@ -34,7 +34,7 @@ public:
         destroy(root);
     }
 
-    // ´´½¨¶þ²æÊ÷
+    // Â´Â´Â½Â¨Â¶Ã¾Â²Ã¦ÃŠÃ·
     void create() {
         TreeNode* q[100];
         int front = 1, rear = 0;
