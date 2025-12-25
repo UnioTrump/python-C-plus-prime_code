@@ -120,8 +120,8 @@ public:
 		// dispSorted();
 	}
 private:
-	int* R; // 原始数组
-	int* T; // 排序用数组
+	int* R; // 脭颅脢录脢媒脳茅
+	int* T; // 脜脜脨貌脫脙脢媒脳茅
 	int N;
 	int getRand(int min, int max) {
 		return (rand() % (max - min + 1)) + min;
