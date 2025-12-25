@@ -11,7 +11,7 @@ private:
 		int idx;
 	};
 	vector<int> node;
-	vector<list<int>> adj;	//�ڽӱ�
+	vector<list<int>> adj;	//ÁÚ½Ó±í
 public:
 	Graph(int n) {
 		this->n = n;
